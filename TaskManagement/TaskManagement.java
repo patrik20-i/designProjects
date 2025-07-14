@@ -4,7 +4,8 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class TaskManagement {
-    private static TaskManagement instance;
+    
+    private static volatile TaskManagement instance;
 
     private final List<Task> tasks;
     private final List<User> users;
@@ -20,11 +21,15 @@ public class TaskManagement {
         taskCommentsMap = new ConcurrentHashMap<>();
     }
 
-    public static synchronized TaskManagement getInstance(){
-        if(instance == null){
-            return new TaskManagement();
+    
+    public static TaskManagement getInstance() {
+        if (instance == null) {                    // First check
+            synchronized (TaskManagement.class) {   // Lock only when needed
+                if (instance == null) {             // Second check with lock
+                    instance = new TaskManagement();
+                }
+            }
         }
-
         return instance;
     }
 
