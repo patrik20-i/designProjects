@@ -45,7 +45,7 @@ public class TaskManagement {
         if (!tasks.contains(task) || !users.contains(user)) {
             throw new IllegalArgumentException("Task or User does not exist.");
         }
-        userTasksMap.computeIfAbsent(user, _ -> new ArrayList<>()).add(task);
+        userTasksMap.computeIfAbsent(user, k -> new ArrayList<>()).add(task);
     }
 
     public List<Task> getTasksForUser(User user) {
@@ -56,7 +56,7 @@ public class TaskManagement {
         if (!tasks.contains(task)) {
             throw new IllegalArgumentException("Task does not exist.");
         }
-        taskCommentsMap.computeIfAbsent(task, _ -> new ArrayList<>()).add(comment);
+        taskCommentsMap.computeIfAbsent(task, key -> new ArrayList<>()).add(comment);
     }
 
     public List<Comment> getCommentsForTask(Task task) {
