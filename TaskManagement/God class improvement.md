@@ -330,7 +330,7 @@ public class TaskManagementFacade {
 ```java
 // Old code continues to work
 TaskManagement tm = TaskManagement.getInstance();
-tm.assignTaskToUser(user, task);  // Still works!
+tm.assignTaskToUser(user, task);  // Still works!1
 
 // New code can use improved APIs
 tm.getTasksByStatus(TaskStatus.InProgress);  // New functionality
@@ -356,7 +356,7 @@ public void reassignTask(String taskId, String fromUserId, String toUserId) {
     assignmentManager.assignTaskToUser(toUserId, taskId);
     
     // Send notifications
-    notificationService.notifyTaskReassignment(taskId, fromUserId, toUserId);
+    notificationService.notifyTaskReassignment(tas kId, fromUserId, toUserId);
     
     // Update audit log
     auditService.logTaskReassignment(taskId, fromUserId, toUserId);
