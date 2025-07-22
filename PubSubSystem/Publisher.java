@@ -1,4 +1,4 @@
-import model.Message;
+package PubSubSystem;
 
 public class Publisher {
     private final String id;

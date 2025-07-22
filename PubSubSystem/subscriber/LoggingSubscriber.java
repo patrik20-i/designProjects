@@ -1,6 +1,6 @@
-package subscriber;
+package PubSubSystem.subscriber;
 
-import model.Message;
+import PubSubSystem.Message;
 
 public class LoggingSubscriber implements Subscriber {
     

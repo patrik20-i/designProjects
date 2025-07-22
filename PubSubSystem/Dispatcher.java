@@ -1,7 +1,8 @@
+package PubSubSystem;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import model.Message;
-import subscriber.*;
+import PubSubSystem.subscriber.*;
 
 public class Dispatcher {
     static private final ExecutorService executor = Executors.newCachedThreadPool();

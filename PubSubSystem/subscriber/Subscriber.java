@@ -1,6 +1,6 @@
-package subscriber;
+package PubSubSystem.subscriber;
 
-import model.Message;
+import PubSubSystem.Message;
 
 public interface Subscriber {
     public void consume(Message message);

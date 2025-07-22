@@ -1,5 +1,6 @@
-import subscriber.*;
-import model.Message;
+package PubSubSystem;
+
+import PubSubSystem.subscriber.Subscriber;
 
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
