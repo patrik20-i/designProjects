@@ -1,6 +1,7 @@
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.Map;
 import subscriber.*;
+import model.Message;
 public class Broker {
     //need a map of topics
     private final Map<String, Topic> topics = new ConcurrentHashMap<>();

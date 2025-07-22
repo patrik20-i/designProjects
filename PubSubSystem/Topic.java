@@ -1,4 +1,5 @@
 import subscriber.*;
+import model.Message;
 
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;

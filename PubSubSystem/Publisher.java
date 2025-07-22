@@ -1,3 +1,5 @@
+import model.Message;
+
 public class Publisher {
     private final String id;
     private final Broker broker;
