@@ -1,3 +1,5 @@
+package Multithreading;
+
 public class ParallelThreadsExample {
     public static void main(String[] args) {
         Thread numbersThread = new Thread(() -> {
