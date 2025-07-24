@@ -1,3 +1,5 @@
+package Practice;
+
 class ThreadSafeSingleton {
     private static ThreadSafeSingleton instance;
 

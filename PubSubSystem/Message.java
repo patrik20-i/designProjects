@@ -1,3 +1,5 @@
+package PubSubSystem;
+
 public class Message {
     private final String content;
 

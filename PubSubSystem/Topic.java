@@ -1,7 +1,9 @@
-import subscriber.*;
 
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
+
+import subscriber.Subscriber;
+
 public class Topic {
     private final String name;
     private final Set<Subscriber> subscribers = new CopyOnWriteArraySet<>();
