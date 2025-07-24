@@ -1,4 +1,4 @@
-package src.PubSubSystem;
+package PubSubSystem;
 
 public class Broker {
     
