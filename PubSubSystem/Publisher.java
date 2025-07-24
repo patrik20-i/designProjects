@@ -1,3 +1,5 @@
+package PubSubSystem;
+
 public class Publisher {
     private final String id;
     private final Broker broker;

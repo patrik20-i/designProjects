@@ -1,4 +1,4 @@
-package subscriber;
+package PubSubSystem.subscriber;
 
 import PubSubSystem.Message;
 

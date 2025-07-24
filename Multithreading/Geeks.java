@@ -1,3 +1,5 @@
+package Multithreading;
+
 // Java Program to demonstrate synchronization in Java
 class Counter {
     private int c = 0; // Shared variable

@@ -3,5 +3,7 @@ package LinkedInServiceDesign;
 public enum NotificationType {
     ConnectionRequest,
     JobPosting,
-    Message
+    Message,
+    CONNECTION_REQUEST,
+    MESSAGE
 }
