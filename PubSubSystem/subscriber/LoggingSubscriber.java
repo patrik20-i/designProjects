@@ -1,7 +1,5 @@
 package PubSubSystem.subscriber;
 
-import PubSubSystem.Message;
-
 public class LoggingSubscriber implements Subscriber {
     
     @Override
