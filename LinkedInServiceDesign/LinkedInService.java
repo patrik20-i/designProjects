@@ -10,6 +10,7 @@ public class LinkedInService {
     private static LinkedInService instance;
     private final Map<String, User> users;
     private final Map<String, JobPosting> jobPostings;
+    @SuppressWarnings("unused")
     private final Map<String, List<Notification>> notifications;
 
     private LinkedInService() {
