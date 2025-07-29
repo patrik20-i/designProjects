@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-
-=======
 package PubSubSystem;
->>>>>>> 7e4a7db81eeb4d7593f38ae57462fef521d76fd0
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.Map;
