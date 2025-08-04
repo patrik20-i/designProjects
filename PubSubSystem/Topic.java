@@ -1,14 +1,10 @@
-<<<<<<< HEAD
-=======
 package PubSubSystem;
 
-import PubSubSystem.subscriber.Subscriber;
->>>>>>> 7e4a7db81eeb4d7593f38ae57462fef521d76fd0
+import PubSubSystem.subscriber.*;
 
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
 
-import subscriber.Subscriber;
 
 public class Topic {
     private final String name;

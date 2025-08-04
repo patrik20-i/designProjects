@@ -1,7 +1,5 @@
 package ChessGame;
 
-import ChessGame.*;
-
 import java.util.Scanner;
 
 import ChessGame.Piece.*;
@@ -10,6 +8,7 @@ public class ChessGame {
     private final ChessBoard board;
     private Player whitePlayer, blackPlayer;
     private Player currentPlayer;
+    private Scanner scanner = new Scanner(System.in);
 
     public ChessGame() {
         board = new ChessBoard();
@@ -52,10 +51,8 @@ public class ChessGame {
         return board.isCheckmate(whitePlayer.getColor()) || board.isCheckmate(blackPlayer.getColor()) ||
                 board.isStalemate(whitePlayer.getColor()) || board.isStalemate(blackPlayer.getColor());
     }
-
     private Move getPlayerMove(Player player) {
         // For simplicity, let's assume the player enters the move via console input
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter source row: ");
         int sourceRow = scanner.nextInt();
         System.out.print("Enter source column: ");
@@ -72,6 +69,7 @@ public class ChessGame {
 
         return new Move(board.getCell(sourceRow, sourceCol), board.getCell(destRow, destCol));
     }
+    
 
     private void displayResult() {
         if (board.isCheckmate(Color.WHITE)) {
@@ -81,5 +79,6 @@ public class ChessGame {
         } else if (board.isStalemate(Color.WHITE) || board.isStalemate(Color.BLACK)) {
             System.out.println("The game ends in a stalemate!");
         }
+        scanner.close();
     }
 }
