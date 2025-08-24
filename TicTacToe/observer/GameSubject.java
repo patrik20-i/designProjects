@@ -1,6 +1,5 @@
 package TicTacToe.observer;
 
-import TicTacToe.Game;
 
 import java.util.ArrayList;
 import java.util.List;
